@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ouroboros Platform | Core modulaire pour la gestion d'entreprise</title>
+    <title>Ouroboros Platform | Modular Symfony Core for Business Management</title>
     <style>
         :root {
             --primary: #6e48aa;
@@ -13,10 +13,11 @@
             --light: #f9f9f9;
             --dark: #333;
             --success: #4CAF50;
-            --warning: #FF9800;
+            --code-bg: #f5f5f5;
+            --border-radius: 8px;
         }
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -53,9 +54,9 @@
             background: var(--primary);
             color: white;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: var(--border-radius);
             text-decoration: none;
-            margin-top: 1rem;
+            margin: 0.5rem 0;
             transition: background 0.3s;
         }
         .btn:hover {
@@ -68,6 +69,7 @@
         section h2 {
             color: var(--primary);
             margin-bottom: 1rem;
+            font-size: 1.8rem;
         }
         .features-grid {
             display: grid;
@@ -77,7 +79,7 @@
         }
         .feature-card {
             background: white;
-            border-radius: 8px;
+            border-radius: var(--border-radius);
             padding: 1.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
@@ -90,11 +92,13 @@
             margin-top: 0;
         }
         .code-block {
-            background: #f5f5f5;
-            border-radius: 5px;
+            background: var(--code-bg);
+            border-radius: var(--border-radius);
             padding: 1rem;
             font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
             overflow-x: auto;
+            margin: 1rem 0;
         }
         footer {
             background: var(--dark);
@@ -115,161 +119,161 @@
         <div class="container">
             <h1>Ouroboros Platform</h1>
             <p class="subtitle">
-                Un <strong>core Symfony modulaire</strong> pour la gestion d'entreprise,
-                extensible via des <strong>modules</strong>, des <strong>hooks</strong> et une <strong>marketplace ouverte</strong>.
+                A <strong>modular Symfony core</strong> for business management,
+                extensible via <strong>modules</strong>, <strong>hooks</strong>, and an <strong>open marketplace</strong>.
             </p>
-            <a href="https://github.com/ton-organisation/ouroboros-platform" class="btn">Voir sur GitHub</a>
+            <a href="https://github.com/your-org/ouroboros-platform" class="btn">View on GitHub</a>
         </div>
     </header>
 
     <main class="container">
-        <!-- Section Hero : Core + Extensibilité -->
+        <!-- Hero Section: Core + Extensibility -->
         <section>
             <div class="hero">
                 <div class="hero-content">
-                    <h2>Un core solide, des possibilités infinies</h2>
+                    <h2>A solid core, infinite possibilities</h2>
                     <p>
-                        Ouroboros Platform fournit un <strong>noyau Symfony</strong> prêt à l'emploi,
-                        conçu pour la gestion d'entreprise (CRM, RH, facturation, achats, etc.).
-                        Grâce à son architecture <strong>modulaire</strong> et <strong>extensible</strong>,
-                        tu peux :
+                        Ouroboros Platform provides a <strong>ready-to-use Symfony core</strong>,
+                        designed for business management (CRM, HR, invoicing, purchasing, etc.).
+                        With its <strong>modular</strong> and <strong>extensible</strong> architecture,
+                        you can:
                     </p>
                     <ul>
-                        <li>Utiliser les <strong>modules officiels</strong> (CRM, RH, etc.).</li>
-                        <li>Étendre chaque module via des <strong>hooks</strong> et des <strong>événements</strong>.</li>
-                        <li>Créer tes propres modules et les partager sur la <strong>marketplace</strong>.</li>
-                        <li>Personnaliser l'apparence avec des <strong>thèmes</strong>.</li>
+                        <li>Use <strong>official modules</strong> (CRM, HR, etc.).</li>
+                        <li>Extend each module via <strong>hooks</strong> and <strong>Symfony events</strong>.</li>
+                        <li>Create your own modules and share them on the <strong>marketplace</strong>.</li>
+                        <li>Customize the appearance with <strong>themes</strong>.</li>
                     </ul>
                     <p>
-                        Ouroboros est <strong>open source</strong> : tu contrôles tout,
-                        sans dépendre de solutions propriétaires.
+                        Ouroboros is <strong>open source</strong>: you control everything,
+                        without relying on proprietary solutions.
                     </p>
                 </div>
                 <div class="hero-image">
                     <img src="https://via.placeholder.com/400x300?text=Ouroboros+Architecture"
-                         alt="Schéma d'architecture modulaire d'Ouroboros Platform"
-                         style="max-width: 100%; border-radius: 8px;">
+                         alt="Ouroboros Platform Modular Architecture Diagram"
+                         style="max-width: 100%; border-radius: var(--border-radius);">
                 </div>
             </div>
         </section>
 
-        <!-- Section Modules -->
+        <!-- Modules Section -->
         <section>
-            <h2>Modules disponibles</h2>
+            <h2>Available Modules</h2>
             <p>
-                Ouroboros Platform inclut des modules prêts à l'emploi,
-                conçus pour couvrir les besoins courants des entreprises.
+                Ouroboros Platform includes ready-to-use modules,
+                designed to cover common business needs.
             </p>
             <div class="features-grid">
                 <div class="feature-card">
                     <h3>📊 CRM</h3>
-                    <p>Gestion des clients, prospects, et pipelines de vente.</p>
+                    <p>Customer and prospect management, sales pipelines.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>👥 Ressources Humaines</h3>
-                    <p>Gestion des employés, congés, et paie.</p>
+                    <h3>👥 Human Resources</h3>
+                    <p>Employee management, leave tracking, payroll.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>💰 Facturation</h3>
-                    <p>Création et suivi des factures, devis, et paiements.</p>
+                    <h3>💰 Invoicing</h3>
+                    <p>Invoice and quote creation, payment tracking.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🛒 Achats</h3>
-                    <p>Gestion des fournisseurs, commandes, et stocks.</p>
+                    <h3>🛒 Purchasing</h3>
+                    <p>Supplier management, orders, and inventory.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>📅 Projets</h3>
-                    <p>Suivi des tâches, des équipes, et des deadlines.</p>
+                    <h3>📅 Projects</h3>
+                    <p>Task and team management, deadlines.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>⚙️ Paramètres</h3>
-                    <p>Configuration globale et personnalisation.</p>
+                    <h3>⚙️ Settings</h3>
+                    <p>Global configuration and customization.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section Extensibilité -->
+        <!-- Extensibility Section -->
         <section>
-            <h2>Extensible à l'infini</h2>
+            <h2>Infinitely Extensible</h2>
             <p>
-                Ouroboros est conçu pour être <strong>100% extensible</strong> :
+                Ouroboros is designed to be <strong>100% extensible</strong>:
             </p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🔌 Hooks & Événements</h3>
+                    <h3>🔌 Hooks & Events</h3>
                     <p>
-                        Chaque module expose des <strong>hooks</strong> et des <strong>événements Symfony</strong>
-                        pour étendre ou modifier son comportement.
+                        Each module exposes <strong>hooks</strong> and <strong>Symfony events</strong>
+                        to extend or modify its behavior.
                     </p>
                     <div class="code-block">
-                        // Exemple d'écoute d'un événement
-                        $dispatcher->addListener(
-                            'ouroboros.crm.contact_created',
-                            function(ContactEvent $event) {
-                                // Ta logique personnalisée
-                            }
-                        );
+// Example: Listening to a CRM contact creation event
+$dispatcher->addListener(
+    'ouroboros.crm.contact_created',
+    function(ContactEvent $event) {
+        // Your custom logic here
+    }
+);
                     </div>
                 </div>
                 <div class="feature-card">
                     <h3>📦 Marketplace</h3>
                     <p>
-                        Partage tes modules avec la communauté via la <strong>marketplace officielle</strong>,
-                        ou utilise ceux développés par d'autres.
+                        Share your modules with the community via the <strong>official marketplace</strong>,
+                        or use those developed by others.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h3>🎨 Thèmes</h3>
+                    <h3>🎨 Themes</h3>
                     <p>
-                        Personnalise l'apparence de la plateforme avec des thèmes,
-                        ou crée les tiens en utilisant notre système de templates.
+                        Customize the platform's appearance with themes,
+                        or create your own using our templating system.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Section Développeurs -->
+        <!-- Developers Section -->
         <section>
-            <h2>Pour les développeurs</h2>
+            <h2>For Developers</h2>
             <p>
-                Ouroboros est <strong>open source</strong> et conçu pour les développeurs.
-                Voici comment contribuer ou créer tes propres extensions :
+                Ouroboros is <strong>open source</strong> and built for developers.
+                Here's how to contribute or create your own extensions:
             </p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🛠️ Créer un module</h3>
+                    <h3>🛠️ Create a Module</h3>
                     <p>
-                        Chaque module est un <strong>bundle Symfony</strong> indépendant.
-                        Utilise notre <a href="docs/module-creation.md">guide</a> pour créer le tien.
+                        Each module is an independent <strong>Symfony bundle</strong>.
+                        Use our <a href="docs/module-creation.md">guide</a> to create yours.
                     </p>
                 </div>
                 <div class="feature-card">
                     <h3>📖 Documentation</h3>
                     <p>
-                        Consulte la <a href="docs/">documentation technique</a>
-                        pour tout savoir sur l'API, les hooks, et les bonnes pratiques.
+                        Check out the <a href="docs/">technical documentation</a>
+                        for everything about the API, hooks, and best practices.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h3>🤝 Contribuer</h3>
+                    <h3>🤝 Contribute</h3>
                     <p>
-                        Rejoins la communauté sur GitHub pour signaler des bugs,
-                        proposer des fonctionnalités, ou soumettre des PR.
+                        Join the community on GitHub to report bugs,
+                        suggest features, or submit pull requests.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
+        <!-- CTA Section -->
         <section style="text-align: center; padding: 3rem 0;">
-            <h2>Prêt à essayer Ouroboros Platform ?</h2>
+            <h2>Ready to Try Ouroboros Platform?</h2>
             <p>
-                <a href="https://github.com/ton-organisation/ouroboros-platform" class="btn">
-                    Voir le code sur GitHub
+                <a href="https://github.com/your-org/ouroboros-platform" class="btn">
+                    View the Code on GitHub
                 </a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
-                Ou explore la <a href="docs/installation.md">documentation d'installation</a>.
+                Or explore the <a href="docs/installation.md">installation guide</a>.
             </p>
         </section>
     </main>
@@ -278,7 +282,7 @@
         <div class="container">
             <p>
                 &copy; 2026 Ouroboros Platform.
-                Sous licence <a href="LICENSE" style="color: white;">MIT</a>.
+                Licensed under <a href="LICENSE" style="color: white;">MIT</a>.
             </p>
         </div>
     </footer>
